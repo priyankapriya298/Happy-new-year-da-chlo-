@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy New Year Thango 🩵</title>
+
+<style>
+body{
+  background: linear-gradient(to bottom, #ffdde1, #ee9ca7);
+  font-family: 'Comic Sans MS', cursive;
+  text-align: center;
+  padding: 20px;
+}
+
+.box{
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  max-width: 650px;
+}
+
+p{
+  font-size: 20px;
+  color:#2f3640;
+  line-height: 1.7;
+}
+
+button{
+  background:#ff4d6d;
+  color:white;
+  border:none;
+  padding:14px 28px;
+  font-size:18px;
+  border-radius:30px;
+  cursor:pointer;
+  box-shadow: 0 0 20px hotpink;
+  margin-top: 20px;
+}
+
+/* HEART STYLE */
+.heart-box{
+  display:none;
+  margin-top:40px;
+}
+
+.heart{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background: hotpink;
+  transform: rotate(-45deg);
+  margin: 60px auto;
+  animation: glow 1.5s infinite alternate;
+}
+
+.heart::before,
+.heart::after{
+  content:"";
+  position:absolute;
+  width:150px;
+  height:150px;
+  background:hotpink;
+  border-radius:50%;
+}
+
+.heart::before{
+  top:-75px;
+  left:0;
+}
+
+.heart::after{
+  left:75px;
+  top:0;
+}
+
+@keyframes glow{
+  from{
+    box-shadow: 0 0 10px hotpink;
+  }
+  to{
+    box-shadow: 0 0 35px hotpink;
+  }
+}
+
+.heart-text{
+  position:absolute;
+  width:100%;
+  top:48px;
+  left:0;
+  transform: rotate(45deg);
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<p>
+Happy new year da thango🫂🤗😚💋...<br><br>
+
+This yr will bring u all the gud things✨🤞  
+n nt just this yr I'll always be there fr u 🫂🩵...<br><br>
+
+This New Year, I'm sending u nt just wishes,  
+but my whole heart💓💖💞...<br><br>
+
+all is well ❤️‍🩹  
+luv u 😘 n miss u🥺🥺🫂🫂<br><br>
+
+If u're smiling rn just knw tht  
+someone far away is loving u deeply  
+and missing u so much....🫂🫂😘😚💋🥺<br><br>
+
+You're always mine🩵✨🫶
+</p>
+
+<!-- CLICK BUTTON JUST BELOW THE LINES -->
+<button onclick="showHeart()">💖 Click Now 💖</button>
+
+<div class="heart-box" id="heartBox">
+  <div class="heart">
+    <div class="heart-text">
+      Hari ❤️ Priya
+    </div>
+  </div>
+</div>
+
+</div>
+
+<script>
+function showHeart(){
+  document.getElementById("heartBox").style.display="block";
+}
+</script>
+
+</body>
+</html>
